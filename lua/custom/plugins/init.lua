@@ -3,6 +3,6 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-  'github/copilot.vim',
-  "ellisonleao/glow.nvim", config = true, cmd = "Glow"
+  "ellisonleao/glow.nvim", config = true, cmd = "Glow",
+  "github/copilot.vim"
 }
