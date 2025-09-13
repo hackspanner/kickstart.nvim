@@ -5,7 +5,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
@@ -54,6 +54,12 @@ vim.o.timeoutlen = 300
 -- Configure how new splits should be opened
 vim.o.splitright = true
 vim.o.splitbelow = true
+
+-- my tab prefs
+vim.o.ts = 2
+vim.o.sts = 2
+vim.o.sw = 2
+vim.o.et = true
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
