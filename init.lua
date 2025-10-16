@@ -934,5 +934,15 @@ require('lazy').setup({
   },
 })
 
+-- Install VIMPLUG Plugins here:
+--  install tidal cycles vim plugin
+vim.g.tidal_target = 'terminal'
+vim.cmd 'filetype plugin on'
+vim.call('plug#begin', '~/.local/share/nvim/plugged')
+vim.fn['plug#'] 'tidalcycles/vim-tidal'
+vim.call('plug#end')
+vim.g.tidal_target = 'terminal'
+vim.cmd 'filetype plugin on'
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
