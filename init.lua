@@ -942,14 +942,17 @@ require('lazy').setup({
 })
 
 -- Install VIMPLUG Plugins here:
---  install tidal cycles vim plugin
 vim.g.tidal_target = 'terminal'
 vim.cmd 'filetype plugin on'
 vim.call('plug#begin', '~/.local/share/nvim/plugged')
+--  install tidal cycles vim plugin
 vim.fn['plug#'] 'tidalcycles/vim-tidal'
-vim.call('plug#end')
+-- install vaxe plugin for haxe language
+vim.fn['plug#'] 'jdonaldson/vaxe'
+vim.call 'plug#end'
 vim.g.tidal_target = 'terminal'
-vim.cmd 'filetype plugin on'
+vim.g.vaxe_cache_server = ''
+vim.g.vaxe_completeopt_menuone = ''
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
